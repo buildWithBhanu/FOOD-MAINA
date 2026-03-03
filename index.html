@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Mania</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="@container">
+
+            <nav class=" fixed w-full z-20 top-0 start-0 ">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                    <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+
+                        <span class="logo-x">FOOD MANIA</span>
+                    </a>
+                    <div class="hidden w-full md:block md:w-auto " id="navbar-default">
+                        <ul
+                            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
+                            <li>
+                                <a href="#home"
+                                    class="block py-2 px-3 text-white bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
+                                    aria-current="page">Home</a>
+                            </li>
+                            <li>
+                                <a href="#menu"
+                                    class="block py-2 px-3 text-white rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Menu</a>
+                            </li>
+                            <li>
+                                <a href="#about"
+                                    class="block py-2 px-3 text-white rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">About</a>
+                            </li>
+                            <li>
+                                <a href="#contact"
+                                    class="block py-2 px-3 text-white rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-row gap-10 lg:gap-5 justify-center items-center">
+                        <button data-collapse-toggle="navbar-default" type="button"
+                            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
+                            aria-controls="navbar-default" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" class="w-6 h-6 text-gray-700">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+
+
+                        <button
+                            class="bg-transparent border border-gray-300 rounded-full text-white  hover:bg-gray-300 text-gray-700 p-3 rounded-full transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386a1.125 1.125 0 011.11.909l.383 1.916m0 0L6.75 15.75a1.125 1.125 0 001.11.909h8.517a1.125 1.125 0 001.11-.909l1.621-8.925H5.129zM9 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm9 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <section class="bgx" id="home">
+            <div class="container mx-auto px-4">
+                <div class="rwx"></div>
+                <div class="flex flex-wrap -mx-4 flex-col rwm">
+
+                    <div class="hdr text-center flex flex-col gap-10">
+                        <h1
+                            class="text-center xl:text-8xl lg:text-6xl md:text-5xl sm:text-4xl text-4xl font-bold text-white">
+                            .Fresh . Fastbr
+                            <br> Delicious
+                        </h1>
+                        <span class="text-2xl text-center text-white text-[#d4d4d9]">Order your favorite fast food from
+                            FOOD MANIA</span>
+                    </div>
+                    <div class="btns flex flex-row gap-5 justify-center pt-10">
+                        <button type="button"
+                            class="text-black 1875rem font-semibold rounded-3xl bg-[#FF9119] hover:bg-[#FF9119]/80 focus:ring-4 focus:outline-none focus:ring-[#FF9119]/50 box-border border border-transparent shadow-xs font-medium leading-5 rounded-base text-sm px-5 py-2.5 text-center inline-flex items-center dark:hover:bg-[#FF9119]/80 dark:focus:ring-[#FF9119]/40">
+                            Order Now
+                        </button>
+                        <button
+                            class="bg-white/10 backdrop-blur-md border font-bold rounded-3xl border-white/30 text-white px-6 py-2.5 rounded-2xl hover:bg-white/20 transition duration-300">
+                            View Menu
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-[#09090b] ">
+            <div class="w-full px-4">
+                <div class="flex flex-wrap -mx-4 py-20">
+                    <div class="max-w-8xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 py-20">
+                        <div
+                            class="bg-[#18181b]  transform hover:-translate-y-3  transition duration-700 ease-in-out border-t-4 border-orange-500 hover:border-t-0  hover:border hover:border-orange-500 rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl transition duration-300">
+                            <button type="button"
+                                class="transform text-xl mb-5 hover:scale-105 transition duration-300  text-black 1875rem font-semibold rounded-3xl bg-[#FF9119] hover:bg-[#FF9119]/80 focus:ring-4 focus:outline-none focus:ring-[#FF9119]/50 box-border border border-transparent shadow-xs font-medium leading-5 rounded-base text-sm px-5 py-2.5 text-center inline-flex items-center dark:hover:bg-[#FF9119]/80 dark:focus:ring-[#FF9119]/40">
+                                20% OFF
+                            </button>
+                            <h3 class="text-2xl text-white font-semibold mb-2">Combo Deals</h3>
+                            <p class="text-gray-500 text-lg mb-4">
+                                Get any burger + fries + drink combo at 20% off!
+                            </p>
+
+                        </div>
+                        <div
+                            class="bg-[#18181b]  transform hover:-translate-y-3  transition duration-700 ease-in-out border-t-4 border-orange-500 hover:border-t-0  hover:border hover:border-orange-500 rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl transition duration-300">
+                            <button type="button"
+                                class="transform text-xl mb-5 hover:scale-105 transition duration-300  text-black 1875rem font-semibold rounded-3xl bg-[#FF9119] hover:bg-[#FF9119]/80 focus:ring-4 focus:outline-none focus:ring-[#FF9119]/50 box-border border border-transparent shadow-xs font-medium leading-5 rounded-base text-sm px-5 py-2.5 text-center inline-flex items-center dark:hover:bg-[#FF9119]/80 dark:focus:ring-[#FF9119]/40">
+                                BUY 1 GET 1
+                            </button>
+                            <h3 class="text-2xl text-white font-semibold mb-2">Pizza Bonanza</h3>
+                            <p class="text-gray-500 text-lg mb-4">
+                                Buy one large pizza and get a medium pizza free!
+                            </p>
+
+                        </div>
+                        <div
+                            class="bg-[#18181b]  transform hover:-translate-y-3  transition duration-700 ease-in-out border-t-4 border-orange-500 hover:border-t-0  hover:border hover:border-orange-500 rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl transition duration-300">
+                            <button type="button"
+                                class="transform text-xl mb-5 hover:scale-105 transition duration-300  text-black 1875rem font-semibold rounded-3xl bg-[#FF9119] hover:bg-[#FF9119]/80 focus:ring-4 focus:outline-none focus:ring-[#FF9119]/50 box-border border border-transparent shadow-xs font-medium leading-5 rounded-base text-sm px-5 py-2.5 text-center inline-flex items-center dark:hover:bg-[#FF9119]/80 dark:focus:ring-[#FF9119]/40">
+                                ₹99 ONLY
+                            </button>
+                            <h3 class="text-2xl text-white font-semibold mb-2">Momos Special</h3>
+                            <p class="text-gray-500 text-lg mb-4">
+                                All momos at just ₹99 this week!
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-wrap flex-col -mx-4 " id="menu">
+                    <h2 class="text-5xl text-white font-bold text-center mb-5">Our Menu</h2>
+                    <p class="text-gray-500 text-center text-xl mb-10">Explore our delicious range of fast food</p>
+                    <div class="flex flex-wrap gap-5 justify-center mb-12">
+
+                        <button
+                            class="category-btn px-6 py-2 border-2 border-orange-500 bg-orange-500 text-white rounded-full transition duration-300"
+                            data-target="all">
+                            All
+                        </button>
+
+                        <button
+                            class="category-btn px-6 py-2 border-2 border-gray-400 text-gray-700 rounded-full bg-transparent hover:border-orange-500 transition duration-300"
+                            data-target="burger">
+                            Burgers
+                        </button>
+
+                        <button
+                            class="category-btn px-6 py-2 border-2 border-gray-400 text-gray-700 rounded-full bg-transparent hover:border-orange-500 transition duration-300"
+                            data-target="pizza">
+                            Pizza
+                        </button>
+
+                        <button
+                            class="category-btn px-6 py-2 border-2 border-gray-400 text-gray-700 rounded-full bg-transparent hover:border-orange-500 transition duration-300"
+                            data-target="sandwich">
+                            Sandwich
+                        </button>
+
+                        <button
+                            class="category-btn px-6 py-2 border-2 border-gray-400 text-gray-700 rounded-full bg-transparent hover:border-orange-500 transition duration-300"
+                            data-target="momos">
+                            Momos
+                        </button>
+
+                        <button
+                            class="category-btn px-6 py-2 border-2 border-gray-400 text-gray-700 rounded-full bg-transparent hover:border-orange-500 transition duration-300"
+                            data-target="cold-drinks">
+                            Cold Drinks
+                        </button>
+
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+                        <div class="bg-[#19191c] food-item block max-w-sm p-2 pb-5 rounded-2xl border border-orange-500  transition-all duration-300 hover:shadow-[0_10px_25px_rgba(249,115,22,0.5)] hover:-translate-y-4 flex flex-col justify-between"
+                            data-category="burger">
+                            <a href="#">
+                                <img class="rounded-2xl w-full h-100 object-cover" src="Images/burger-1.jpg"
+                                    alt="Food Image" />
+                            </a>
+                            <div class="flex-grow">
+                                <a href="#">
+                                    <h5 class="mt-6 mb-3 text-3xl font-bold tracking-tight text-white">
+                                        Classic Cheese Burger
+                                    </h5>
+                                </a>
+                                <p class="mb-6 text-gray-500 text-xl leading-relaxed">
+                                    Juicy beef patty with melted cheese, fresh lettuce, and special sauce
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-between mt-4">
+                                <span class="text-2xl font-bold text-orange-500">₹149</span>
+                                <button
+                                    class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-5 py-2.5 rounded-lg transition duration-300 shadow-md hover:shadow-lg">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bg-[#19191c]  food-item block max-w-sm p-2 pb-5 rounded-2xl  border border-orange-500 hover:shadow-[0_10px_25px_rgba(249,115,22,0.5)] hover:-translate-y-4 transition-all duration-300 flex flex-col "
+                            data-category="burger">
+                            <a href="#">
+                                <img class="rounded-2xl w-full h-100 object-cover" src="Images/burger-1.jpg"
+                                    alt="Food Image" />
+                            </a>
+                            <div class="flex-grow">
+                                <a href="#">
+                                    <h5 class="mt-6 mb-3 text-3xl font-bold tracking-tight text-white">
+                                        Classic Cheese Burger
+                                    </h5>
+                                </a>
+                                <p class="mb-6 text-gray-500 text-xl leading-relaxed">
+                                    Juicy beef patty with melted cheese, fresh lettuce, and special sauce
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-between mt-4">
+                                <span class="text-2xl font-bold text-orange-500">₹139</span>
+                                <button
+                                    class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-5 py-2.5 rounded-lg transition duration-300 shadow-md hover:shadow-lg">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bg-[#19191c]  food-item block max-w-sm p-2 pb-5 rounded-2xl  border border-orange-500 hover:shadow-[0_10px_25px_rgba(249,115,22,0.5)] hover:-translate-y-4 transition-all duration-300 flex flex-col "
+                            data-category="burger">
+                            <a href="#">
+                                <img class="rounded-2xl w-full h-100 object-cover" src="Images/burger-1.jpg"
+                                    alt="Food Image" />
+                            </a>
+                            <div class="flex-grow">
+                                <a href="#">
+                                    <h5 class="mt-6 mb-3 text-3xl font-bold tracking-tight text-white">
+                                        Classic Cheese Burger
+                                    </h5>
+                                </a>
+                                <p class="mb-6 text-gray-500 text-xl leading-relaxed">
+                                    Juicy beef patty with melted cheese, fresh lettuce, and special sauce
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-between mt-4">
+                                <span class="text-2xl font-bold text-orange-500">₹119</span>
+                                <button
+                                    class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-5 py-2.5 rounded-lg transition duration-300 shadow-md hover:shadow-lg">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bg-[#19191c]  food-item block max-w-sm p-2 pb-5 rounded-2xl  border border-orange-500 hover:shadow-[0_10px_25px_rgba(249,115,22,0.5)] hover:-translate-y-4 transition-all duration-300 flex flex-col "
+                            data-category="pizza">
+                            <a href="#">
+                                <img class="rounded-2xl w-full h-100 object-cover"
+                                    src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=500"
+                                    alt="Food Image" />
+                            </a>
+                            <div class="flex-grow">
+                                <a href="#">
+                                    <h5 class="mt-6 mb-3 text-3xl font-bold tracking-tight text-white">
+                                        Margherita Pizza
+                                    </h5>
+                                </a>
+                                <p class="mb-6 text-gray-500 text-xl leading-relaxed">
+                                    Classic Margherita pizza with fresh mozzarella, tomatoes, and basil
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-between mt-4">
+                                <span class="text-2xl font-bold text-orange-500">₹299</span>
+                                <button
+                                    class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-5 py-2.5 rounded-lg transition duration-300 shadow-md hover:shadow-lg">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bg-[#19191c]  food-item block max-w-sm p-2 pb-5 rounded-2xl  border border-orange-500 hover:shadow-[0_10px_25px_rgba(249,115,22,0.5)] hover:-translate-y-4 transition-all duration-300 flex flex-col "
+                            data-category="pizza">
+                            <a href="#">
+                                <img class="rounded-2xl w-full h-100 object-cover"
+                                    src="https://images.pexels.com/photos/30849268/pexels-photo-30849268.jpeg?w=500"
+                                    alt="Food Image" />
+                            </a>
+                            <div class="flex-grow">
+                                <a href="#">
+                                    <h5 class="mt-6 mb-3 text-3xl font-bold tracking-tight text-white">
+                                        Pepperoni Feast
+                                    </h5>
+                                </a>
+                                <p class="mb-6 text-gray-500 text-xl leading-relaxed">
+                                    Loaded with pepperoni, cheese, and Italian herbs
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-between mt-4">
+                                <span class="text-2xl font-bold text-orange-500">₹399</span>
+                                <button
+                                    class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-5 py-2.5 rounded-lg transition duration-300 shadow-md hover:shadow-lg">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bg-[#19191c]  food-item block max-w-sm p-2 pb-5 rounded-2xl  border border-orange-500 hover:shadow-[0_10px_25px_rgba(249,115,22,0.5)] hover:-translate-y-4 transition-all duration-300 flex flex-col "
+                            data-category="pizza">
+                            <a href="#">
+                                <img class="rounded-2xl w-full h-100 object-cover"
+                                    src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=500"
+                                    alt="Food Image" />
+                            </a>
+                            <div class="flex-grow">
+                                <a href="#">
+                                    <h5 class="mt-6 mb-3 text-3xl font-bold tracking-tight text-white">
+                                        Veggie Paradise
+                                    </h5>
+                                </a>
+                                <p class="mb-6 text-gray-500 text-xl leading-relaxed">
+                                    Fresh vegetables with cheese and signature sauce
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-between mt-4">
+                                <span class="text-2xl font-bold text-orange-500">₹349</span>
+                                <button
+                                    class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-5 py-2.5 rounded-lg transition duration-300 shadow-md hover:shadow-lg">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bg-[#19191c]  food-item block max-w-sm p-2 pb-5 rounded-2xl  border border-orange-500 hover:shadow-[0_10px_25px_rgba(249,115,22,0.5)] hover:-translate-y-4 transition-all duration-300 flex flex-col "
+                            data-category="sandwich">
+                            <a href="#">
+                                <img class="rounded-2xl w-full h-100 object-cover"
+                                    src="https://images.pexels.com/photos/28681955/pexels-photo-28681955.jpeg?w=500"
+                                    alt="Food Image" />
+                            </a>
+                            <div class="flex-grow">
+                                <a href="#">
+                                    <h5 class="mt-6 mb-3 text-3xl font-bold tracking-tight text-white">
+                                        Club Supreme Sandwich
+                                    </h5>
+                                </a>
+                                <p class="mb-6 text-gray-500 text-xl leading-relaxed">
+                                    Triple-layered with chicken, cheese, lettuce, and tomato
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-between mt-4">
+                                <span class="text-2xl font-bold text-orange-500">₹199</span>
+                                <button
+                                    class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-5 py-2.5 rounded-lg transition duration-300 shadow-md hover:shadow-lg">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bg-[#19191c]  food-item block max-w-sm p-2 pb-5 rounded-2xl  border border-orange-500 hover:shadow-[0_10px_25px_rgba(249,115,22,0.5)] hover:-translate-y-4 transition-all duration-300 flex flex-col "
+                            data-category="sandwich">
+                            <a href="#">
+                                <img class="rounded-2xl w-full h-100 object-cover"
+                                    src="https://images.unsplash.com/photo-1509722747041-616f39b57569?w=500"
+                                    alt="Food Image" />
+                            </a>
+                            <div class="flex-grow">
+                                <a href="#">
+                                    <h5 class="mt-6 mb-3 text-3xl font-bold tracking-tight text-white">
+                                        Grilled Paneer Sandwich
+                                    </h5>
+                                </a>
+                                <p class="mb-6 text-gray-500 text-xl leading-relaxed">
+                                    Grilled paneer with mint chutney and vegetables
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-between mt-4">
+                                <span class="text-2xl font-bold text-orange-500">₹149</span>
+                                <button
+                                    class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-5 py-2.5 rounded-lg transition duration-300 shadow-md hover:shadow-lg">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bg-[#19191c]  food-item block max-w-sm p-2 pb-5 rounded-2xl  border border-orange-500 hover:shadow-[0_10px_25px_rgba(249,115,22,0.5)] hover:-translate-y-4 transition-all duration-300 flex flex-col "
+                            data-category="sandwich">
+                            <a href="#">
+                                <img class="rounded-2xl w-full h-100 object-cover"
+                                    src="https://images.unsplash.com/photo-1619096252214-ef06c45683e3?w=500"
+                                    alt="Food Image" />
+                            </a>
+                            <div class="flex-grow">
+                                <a href="#">
+                                    <h5 class="mt-6 mb-3 text-3xl font-bold tracking-tight text-white">
+                                        Chicken Tikka Sandwich
+                                    </h5>
+                                </a>
+                                <p class="mb-6 text-gray-500 text-xl leading-relaxed">
+                                    Spicy tikka chicken with onions and special sauce
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-between mt-4">
+                                <span class="text-2xl font-bold text-orange-500">₹179</span>
+                                <button
+                                    class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-5 py-2.5 rounded-lg transition duration-300 shadow-md hover:shadow-lg">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bg-[#19191c]  food-item block max-w-sm p-2 pb-5 rounded-2xl  border border-orange-500 hover:shadow-[0_10px_25px_rgba(249,115,22,0.5)] hover:-translate-y-4 transition-all duration-300 flex flex-col "
+                            data-category="momos">
+                            <a href="#">
+                                <img class="rounded-2xl w-full h-100 object-cover"
+                                    src="https://images.unsplash.com/photo-1694850184798-320a8e10bb5e?w=500"
+                                    alt="Food Image" />
+                            </a>
+                            <div class="flex-grow">
+                                <a href="#">
+                                    <h5 class="mt-6 mb-3 text-3xl font-bold tracking-tight text-white">
+                                        Steamed Veg Momos
+                                    </h5>
+                                </a>
+                                <p class="mb-6 text-gray-500 text-xl leading-relaxed">
+                                    Fresh vegetables wrapped in soft dough, served with chutney
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-between mt-4">
+                                <span class="text-2xl font-bold text-orange-500">₹99</span>
+                                <button
+                                    class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-5 py-2.5 rounded-lg transition duration-300 shadow-md hover:shadow-lg">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bg-[#19191c]  food-item block max-w-sm p-2 pb-5 rounded-2xl  border border-orange-500 hover:shadow-[0_10px_25px_rgba(249,115,22,0.5)] hover:-translate-y-4 transition-all duration-300 flex flex-col "
+                            data-category="momos">
+                            <a href="#">
+                                <img class="rounded-2xl w-full h-100 object-cover"
+                                    src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=500"
+                                    alt="Food Image" />
+                            </a>
+                            <div class="flex-grow">
+                                <a href="#">
+                                    <h5 class="mt-6 mb-3 text-3xl font-bold tracking-tight text-white">
+                                        Chicken Momos
+                                    </h5>
+                                </a>
+                                <p class="mb-6 text-gray-500 text-xl leading-relaxed">
+                                    Juicy chicken filling with authentic Himalayan spices
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-between mt-4">
+                                <span class="text-2xl font-bold text-orange-500">₹129</span>
+                                <button
+                                    class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-5 py-2.5 rounded-lg transition duration-300 shadow-md hover:shadow-lg">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bg-[#19191c]  food-item block max-w-sm p-2 pb-5 rounded-2xl  border border-orange-500 hover:shadow-[0_10px_25px_rgba(249,115,22,0.5)] hover:-translate-y-4 transition-all duration-300 flex flex-col "
+                            data-category="momos">
+                            <a href="#">
+                                <img class="rounded-2xl w-full h-100 object-cover"
+                                    src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=500"
+                                    alt="Food Image" />
+                            </a>
+                            <div class="flex-grow">
+                                <a href="#">
+                                    <h5 class="mt-6 mb-3 text-3xl font-bold tracking-tight text-white">
+                                        Fried Paneer Momos
+                                    </h5>
+                                </a>
+                                <p class="mb-6 text-gray-500 text-xl leading-relaxed">
+                                    Crispy fried momos with paneer and cheese filling
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-between mt-4">
+                                <span class="text-2xl font-bold text-orange-500">₹139</span>
+                                <button
+                                    class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-5 py-2.5 rounded-lg transition duration-300 shadow-md hover:shadow-lg">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bg-[#19191c]  food-item block max-w-sm p-2 pb-5 rounded-2xl  border border-orange-500 hover:shadow-[0_10px_25px_rgba(249,115,22,0.5)] hover:-translate-y-4 transition-all duration-300 flex flex-col "
+                            data-category="cold-drinks">
+                            <a href="#">
+                                <img class="rounded-2xl w-full h-100 object-cover"
+                                    src="https://images.unsplash.com/photo-1770452567887-4f0c727dad43?w=500"
+                                    alt="Food Image" />
+                            </a>
+                            <div class="flex-grow">
+                                <a href="#">
+                                    <h5 class="mt-6 mb-3 text-3xl font-bold tracking-tight text-white">
+                                        Cola Refresh
+                                    </h5>
+                                </a>
+                                <p class="mb-6 text-gray-500 text-xl leading-relaxed">
+                                    Chilled cola drink to refresh your taste buds
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-between mt-4">
+                                <span class="text-2xl font-bold text-orange-500">₹59</span>
+                                <button
+                                    class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-5 py-2.5 rounded-lg transition duration-300 shadow-md hover:shadow-lg">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bg-[#19191c]  food-item block max-w-sm p-2 pb-5 rounded-2xl  border border-orange-500 hover:shadow-[0_10px_25px_rgba(249,115,22,0.5)] hover:-translate-y-4 transition-all duration-300 flex flex-col "
+                            data-category="cold-drinks">
+                            <a href="#">
+                                <img class="rounded-2xl w-full h-100 object-cover"
+                                    src="https://images.unsplash.com/photo-1770452567887-4f0c727dad43?w=500"
+                                    alt="Food Image" />
+                            </a>
+                            <div class="flex-grow">
+                                <a href="#">
+                                    <h5 class="mt-6 mb-3 text-3xl font-bold tracking-tight text-white">
+                                        Fresh Lemonade
+                                    </h5>
+                                </a>
+                                <p class="mb-6 text-gray-500 text-xl leading-relaxed">
+                                    Handmade lemonade with fresh lemon and mint
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-between mt-4">
+                                <span class="text-2xl font-bold text-orange-500">₹69</span>
+                                <button
+                                    class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-5 py-2.5 rounded-lg transition duration-300 shadow-md hover:shadow-lg">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bg-[#19191c]  food-item block max-w-sm p-2 pb-5 rounded-2xl  border border-orange-500 hover:shadow-[0_10px_25px_rgba(249,115,22,0.5)] hover:-translate-y-4 transition-all duration-300 flex flex-col "
+                            data-category="cold-drinks">
+                            <a href="#">
+                                <img class="rounded-2xl w-full h-100 object-cover"
+                                    src="https://images.unsplash.com/photo-1770452567887-4f0c727dad43?w=500"
+                                    alt="Food Image" />
+                            </a>
+                            <div class="flex-grow">
+                                <a href="#">
+                                    <h5 class="mt-6 mb-3 text-3xl font-bold tracking-tight text-white">
+                                        Mango Lassi
+                                    </h5>
+                                </a>
+                                <p class="mb-6 text-gray-500 text-xl leading-relaxed">
+                                    Creamy yogurt drink with ripe mango pulp
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-between mt-4">
+                                <span class="text-2xl font-bold text-orange-500">₹89</span>
+                                <button
+                                    class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-5 py-2.5 rounded-lg transition duration-300 shadow-md hover:shadow-lg">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-[#09090b] py-10" id="about">
+            <div class="container mx-auto px-4 ">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-20 justify-between items-center">
+                    <div class="flex flex-col p-4 justify-center">
+                        <h2 class="text-6xl font-bold text-white mb-6">About FOOD MANIA</h2>
+                        <p class="text-gray-300 text-lg leading-relaxed mb-5">At FOOD MANIA, we believe in serving
+                            fresh,
+                            delicious fast food that brings joy to every bite. Established with a passion for quality
+                            ingredients and exceptional taste, we've been serving our community with the finest burgers,
+                            pizzas, sandwiches, and more.</p>
+                        <p class="text-gray-300 text-lg leading-relaxed mb-10">Our secret? Fresh ingredients delivered
+                            daily,
+                            expert chefs who pour their heart into every dish, and a commitment to fast delivery without
+                            compromising on quality. Whether you're craving a juicy burger, a cheesy pizza, or authentic
+                            momos, we've got you covered!
+                        </p>
+                        <div class=" flex flex-row gap-5 mb-10">
+                            <div>
+                                <i class="bi text-orange-300 text-2xl bi-clock"></i>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <span class="font-bold text-white text-xl">Fast Delivery</span>
+                                <p class="text-gray-300 text-md">30 min or free</p>
+                            </div>
+                        </div>
+                        <div class=" flex flex-row gap-5">
+                            <div>
+                                <i class="bi text-orange-300 text-2xl bi-star"></i>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <span class="font-bold text-white text-xl">Quality Food</span>
+                                <p class="text-gray-300 text-md">Fresh ingredients daily</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600"
+                            class=" h-50  w-full rounded-3xl" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-[#09090b] py-10">
+            <div class="container mx-auto px-4 ">
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-20 px-6 sm:px-10 place-items-center">
+
+                    <a href="#"
+                        class="bg-neutral-primary-soft transition-all duration-300 border border-orange-200 rounded-xl  hover:shadow-[0_10px_25px_rgba(249,115,22,0.5)] hover:-translate-y-4 text-white w-full max-w-sm p-6 hover:border border-orange-500 rounded-base shadow-md">
+
+                        <span class="flex flex-nowrap flex-row gap-1"><i class="bi text-orange-500 bi-star-fill"></i><i
+                                class="bi text-orange-500 bi-star-fill"></i><i
+                                class="bi text-orange-500 bi-star-fill"></i><i
+                                class="bi text-orange-500 bi-star-fill"></i><i
+                                class="bi text-orange-500 bi-star-fill"></i></span>
+
+                        <p class="text-gray-300 text-lg mt-2">Best burgers in town! The delivery was super fast and the
+                            food was still hot. Highly recommend!
+                        </p>
+                        <p class="text-gray-300 text-md mt-2">- Rahul K.</p>
+                    </a>
+
+                    <a href="#"
+                        class="bg-neutral-primary-soft transition-all duration-300 border border-orange-200 rounded-xl  hover:shadow-[0_10px_25px_rgba(249,115,22,0.5)] hover:-translate-y-4 text-white w-full max-w-sm p-6 hover:border border-orange-500 rounded-base shadow-md">
+
+                        <span class="flex flex-nowrap flex-row gap-1"><i class="bi text-orange-500 bi-star-fill"></i><i
+                                class="bi text-orange-500 bi-star-fill"></i><i
+                                class="bi text-orange-500 bi-star-fill"></i><i
+                                class="bi text-orange-500 bi-star-fill"></i><i
+                                class="bi text-orange-500 bi-star-fill"></i></span>
+
+                        <p class="text-gray-300 text-lg mt-2">Loved the pizza! Fresh ingredients and amazing taste. Will
+                            definitely order <br> again.
+                        </p>
+                        <p class="text-gray-300 text-md mt-2">- Priya M.</p>
+                    </a>
+
+
+
+                    <a href="#"
+                        class="bg-neutral-primary-soft transition-all duration-300 border border-orange-200 rounded-xl  hover:shadow-[0_10px_25px_rgba(249,115,22,0.5)] hover:-translate-y-4 text-white w-full max-w-sm p-6 hover:border border-orange-500 rounded-base shadow-md">
+
+                        <span class="flex flex-nowrap flex-row gap-1"><i class="bi text-orange-500 bi-star-fill"></i><i
+                                class="bi text-orange-500 bi-star-fill"></i><i
+                                class="bi text-orange-500 bi-star-fill"></i><i
+                                class="bi text-orange-500 bi-star-fill"></i><i
+                                class="bi text-orange-500 bi-star-fill"></i></span>
+
+                        <p class="text-gray-300 text-lg mt-2">The momos are absolutely delicious! Great late night food
+                            option. Packaging was perfect.
+                        </p>
+                        <p class="text-gray-300 text-md mt-2">- Amit S.</p>
+                    </a>
+
+
+                </div>
+        </section>
+        <section class="bg-[#09090b] py-10 border-b border-white-500" id="contact">
+            <div class="container mx-auto px-4 ">
+                <div class="flex flex-wrap gap-4 justify-center items-center py-20">
+                    <h2 class="text-6xl font-bold text-white text-center">Contact Us</h2>
+                </div>
+
+            </div>
+            <div class="flex flex-col lg:flex-row px-4 py-10 gap-10 items-start">
+
+
+                <div class="w-full lg:w-1/2">
+
+
+                    <div class="flex gap-5 mb-8">
+                        <i class="bi bi-telephone text-orange-400 text-2xl"></i>
+                        <div>
+                            <span class="font-bold text-white text-xl block">Phone</span>
+                            <p class="text-gray-300 text-lg">+91 99999 99999</p>
+                        </div>
+                    </div>
+
+
+                    <div class="flex gap-5 mb-8">
+                        <i class="bi bi-geo-alt text-orange-400 text-2xl"></i>
+                        <div>
+                            <span class="font-bold text-white text-xl block">Address</span>
+                            <p class="text-gray-300 text-lg">
+                                123 Food Street, Sector 15 <br>
+                                New Delhi - 110001
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="flex gap-5">
+                        <i class="bi bi-clock text-orange-400 text-2xl"></i>
+                        <div>
+                            <span class="font-bold text-white text-xl block">Opening Hours</span>
+                            <p class="text-gray-300 text-lg">
+                                Mon - Sun: 10:00 AM - 11:00 PM
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="w-full lg:w-1/2">
+                    <div class="w-full aspect-video rounded-xl overflow-hidden shadow-lg">
+                        <iframe class="w-full h-full"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7086.86283342336!2d74.84809404342163!3d27.362239005528288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396b6418fb8cbfcd%3A0x2469be839d1eec35!2sDaudsar%2C%20Rajasthan%20341551!5e0!3m2!1sen!2sin!4v1772429256056!5m2!1sen!2sin"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <footer class="w-full bg-[#09090b] text-gray-400 py-12">
+
+        <div class="w-full px-6 
+                grid grid-cols-1 md:grid-cols-3 
+                gap-10 text-center">
+
+
+            <div>
+                <h2 class="text-2xl logo-x font-bold text-white mb-4 tracking-wide">
+                    FOOD MAINA
+                </h2>
+                <p class="text-lg leading-6 max-w-sm mx-auto">
+                    Serving delicious fast food with love and passion since 2020.
+                </p>
+            </div>
+
+
+            <div>
+                <h2 class="text-xl font-semibold text-white mb-4">
+                    Quick Links
+                </h2>
+                <ul class="space-y-3">
+                    <li><a href="#home" class="hover:text-orange-500 transition">Home</a></li>
+                    <li><a href="#about" class="hover:text-orange-500 transition">About</a></li>
+                    <li><a href="#contact" class="hover:text-orange-500 transition">Contact</a></li>
+                </ul>
+            </div>
+
+
+            <div>
+                <h2 class="text-3xl font-semibold text-white mb-4">
+                    Follow Us
+                </h2>
+                <a href="#"></a>
+
+            </div>
+
+        </div>
+
+
+        <div class="border-t border-gray-800 mt-12 pt-6 text-center text-sm text-gray-500">
+            © 2026 YourBrand. All rights reserved.
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <script src="javascript/java.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
